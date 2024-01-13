@@ -1,0 +1,91 @@
+.bgadmin-container {
+    width: 100%;
+    background: rgba(12, 20, 167, 0.915);
+    display: flex;
+    object-fit: cover;
+    height: 100%;
+    position: fixed;
+  }
+  
+  .login-container {
+    align-items: center;
+    width: 1400px;
+    height: 610px;
+    border-radius: 20px;
+    /* Adjust the border-radius for curved edges */
+    border: 7px solid white;
+    /* Set the border width to 15 */
+    margin: auto;
+    position: relative;
+    top: 80px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .login-form {
+    align-items: center;
+    border: 1px solid white;
+    width: 700px;
+    height: 610px;
+    border-radius: 7px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40;
+    right: 0;
+  }
+  
+  .login-img {
+    background-image: url('../Assets/icons/userlogin1.jpg');
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    width: 686px;
+    height: 600px;
+    border-radius: 7px;
+    border: 1px solid white;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 45;
+  }
+
+   
+  
+  
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .heading {
+    color: white;
+    margin-bottom: 60px;
+  }
+  
+  .btn-addstudent {
+    margin-bottom: 30px;
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+  }
+  
+  .btn-addfaculty {
+    width: 150px;
+    height: 40px;
+  }
+  
+  .addedit-container {
+    width: 100%;
+    display: flex;
+    object-fit: contain;
+    height: 100%;
+    position: fixed;
+  }

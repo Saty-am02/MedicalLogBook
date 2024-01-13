@@ -1,0 +1,210 @@
+.container {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background-color: #37a0c0;
+}
+
+.mid-bar {
+  position: fixed;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #05025c;
+  color: white;
+}
+
+.navbar {
+  background-color: #b5b5b5;
+  overflow: hidden;
+  margin-top: 130px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  margin-right: 30px;
+}
+
+.navbar a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 22px;
+  padding: 10px;
+  display: grid;
+}
+
+.navbar a:hover {
+  background-color: #a5a5a5;
+}
+
+.logo {
+  padding-right: 1800px;
+  margin-top: -5px;
+  position: absolute;
+}
+
+.logotext {
+  position: absolute;
+  margin-left: 120px;
+  margin-top: 30px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 10px;
+}
+
+.notifyicon2 {
+  margin-left: 1500px;
+  margin-top: 35px;
+}
+
+.side-bar {
+  position: fixed;
+  top: 199px;
+  left: 0;
+  width: 350px;
+  height: 750px;
+  background-color: #05025c;
+}
+
+.btnlogout {
+  position: absolute;
+  background-color: rgb(47, 183, 228);
+  border-radius: 3px;
+  width: 110px;
+  height: 40px;
+  left: 1780px;
+  top: 30px;
+  font-size: 18px;
+  padding-left: 3px;
+  padding-top: 6px;
+}
+
+.btnsupport {
+  height: 40px;
+  width: 90px;
+  position: absolute;
+  background-color: #05025c;
+  border-radius: 20px;
+  left: 1790px;
+  top: 20px;
+  font-size: 16px;
+  padding-left: 3px;
+  padding-top: 6px;
+  color: white;
+}
+
+.left-navbar {
+  height: 40px;
+  width: 200px;
+  padding-top: 60px;
+}
+
+.left-navbar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.left-navbar li {
+  padding: 10px;
+  display: flex; /* Align items horizontally */
+}
+
+.left-navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 23px;
+  justify-content: left;
+  display: flex; /* Align items horizontally */
+}
+
+.sidebarcont {
+  padding: 10px;
+}
+
+/* Additional styling for sidebar items */
+.sidebaritem {
+  margin-bottom: 10px;
+}
+
+.sidelink {
+  display: flex;
+  align-items: center; /* Center content vertically */
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.internalicon,
+.gradesheeticon,
+.attendanceicon,
+.dailyattendanceicon,
+.courseicon,
+.timetableicon {
+  margin-right: 8px;
+  width: 24px; /* Adjust as needed */
+  height: 24px; /* Adjust as needed */
+}
+.admin-navbar{
+  position: fixed;
+  top: 199px;
+  left: 0;
+  width: 350px;
+  height: 750px;
+  background-color: #05025c;
+}
+.nested-sidebaritem{
+  margin-top: 20px;
+  
+}
+.border-container{
+position:absolute;
+overflow: hidden;
+border: 1px solid black;
+ margin-top: 260px;
+  width: 1500px;
+  height: 600px;
+
+}
+.btnaddeditstudent{
+  position: absolute;
+  background-color: rgb(47, 183, 228);
+  border-radius: 3px;
+  width: 180px;
+  height: 40px;
+  right: 1010px;
+  top: 210px;
+  padding-left: 3px;
+  padding-top: 6px;
+  color: white;
+  font-size: 20px;
+}
+.btnparentdetail{
+  position: absolute;
+  background-color: rgb(47, 183, 228);
+  border-radius: 3px;
+  width: 180px;
+  height: 40px;
+  right: 800px;
+  top: 210px;
+  padding-left: 3px;
+  padding-top: 6px;
+  color: white;
+  font-size: 20px;
+}
+
+
