@@ -53,8 +53,9 @@
 }
 
 .logo {
-  padding-right: 1800px;
-  margin-top: -5px;
+  /* padding-right: 1600px; */
+  padding-left: 30px;
+  margin-top: 15px;
   position: absolute;
 }
 
@@ -121,15 +122,17 @@
 
 .left-navbar li {
   padding: 10px;
-  display: flex; /* Align items horizontally */
+  display: flex;
+  /* Align items horizontally */
 }
 
 .left-navbar a {
   text-decoration: none;
   color: white;
-  font-size: 23px;
+  /* font-size: 23px; */
   justify-content: left;
-  display: flex; /* Align items horizontally */
+  display: flex;
+  /* Align items horizontally */
 }
 
 .sidebarcont {
@@ -143,7 +146,8 @@
 
 .sidelink {
   display: flex;
-  align-items: center; /* Center content vertically */
+  align-items: center;
+  /* Center content vertically */
   text-decoration: none;
   color: white;
   font-size: 18px;
@@ -156,10 +160,13 @@
 .courseicon,
 .timetableicon {
   margin-right: 8px;
-  width: 24px; /* Adjust as needed */
-  height: 24px; /* Adjust as needed */
+  width: 24px;
+  /* Adjust as needed */
+  height: 24px;
+  /* Adjust as needed */
 }
-.admin-navbar{
+
+.admin-navbar {
   position: fixed;
   top: 199px;
   left: 0;
@@ -167,20 +174,23 @@
   height: 750px;
   background-color: #05025c;
 }
-.nested-sidebaritem{
+
+.nested-sidebaritem {
   margin-top: 20px;
-  
+
 }
-.border-container{
-position:absolute;
-overflow: hidden;
-border: 1px solid black;
- margin-top: 260px;
+
+.border-container {
+  position: absolute;
+  overflow: hidden;
+  border: 1px solid black;
+  margin-top: 260px;
   width: 1500px;
   height: 600px;
 
 }
-.btnaddeditstudent{
+
+.btnaddeditstudent {
   position: absolute;
   background-color: rgb(47, 183, 228);
   border-radius: 3px;
@@ -193,7 +203,8 @@ border: 1px solid black;
   color: white;
   font-size: 20px;
 }
-.btnparentdetail{
+
+.btnparentdetail {
   position: absolute;
   background-color: rgb(47, 183, 228);
   border-radius: 3px;
@@ -208,3 +219,63 @@ border: 1px solid black;
 }
 
 
+
+/* @media only screen and (max-width: 768px) {
+  .top-bar {
+    height: 20px;
+  }
+
+  .mid-bar {
+    top: 20px;
+    height: 80px;
+  }
+
+  .navbar {
+    margin-top: 100px;
+  }
+
+  .logo {
+    padding-right: 20px;
+  }
+
+  .notifyicon2 {
+    margin-left: 20px;
+  }
+
+  .side-bar {
+    top: 119px;
+    height: auto;
+    width: 100%;
+  }
+
+  .btnlogout {
+    left: 10px;
+    top: 30px;
+  }
+
+  .btnsupport {
+    left: 20px;
+    top: 20px;
+  }
+
+  .left-navbar {
+    width: 100%;
+    padding-top: 30px;
+  }
+
+  .nested-sidebaritem {
+    margin-top: 10px;
+  }
+
+  .border-container {
+    margin-top: 150px;
+    width: 100%;
+    height: auto;
+  }
+
+  .btnaddeditstudent,
+  .btnparentdetail {
+    width: 100%;
+    right: 0;
+  }
+} */
