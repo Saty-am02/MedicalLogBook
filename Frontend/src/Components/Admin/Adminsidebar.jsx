@@ -3,17 +3,17 @@ import '../Style/style.css'
 import Button from "react-bootstrap/Button";
 
 function Adminsidebar() {
-  const [isStudentCollapsed, setIsStudentCollapsed] = useState(true);
+    const [isStudentCollapsed, setIsStudentCollapsed] = useState(true);
   const [isFacultyCollapsed, setIsFacultyCollapsed] = useState(true);
 
   const handleToggleStudentCollapse = () => {
     setIsStudentCollapsed(!isStudentCollapsed);
     setIsFacultyCollapsed(true)
-
+    
   };
   const handleToggleFacultyCollapse = () => {
     setIsFacultyCollapsed(!isFacultyCollapsed);
-    setIsStudentCollapsed(true); 
+    setIsStudentCollapsed(true); // Close the student collapsible
   };
 
 

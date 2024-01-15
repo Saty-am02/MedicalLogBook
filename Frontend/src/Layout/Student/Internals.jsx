@@ -3,17 +3,22 @@ import '../../Components/Style/style.css';
 import Navbar from '../../Components/Student/Navbar';
 import Sidebar from '../../Components/Student/Sidebar';
 import Card from "react-bootstrap/Card";
+import Button from 'react-bootstrap/esm/Button';
 const Internals = () => {
   return (
     <div className='container'>
     <Navbar/>
     <Sidebar/>
+    <Button className='btninternalmarks' >Internal Marks</Button>
       <Card
-        border="light"
+        border="dark"
         style={{
-          width: "85rem",
+          width: "87rem",
+          height:"35rem",
           marginBlockStart: "200px",
           marginLeft: "100px",
+          marginTop:"290px",
+
         }}
       >
         {/* <Card.Header>Name</Card.Header> */}
@@ -25,21 +30,23 @@ const Internals = () => {
             fontWeight: "bold",
           }}
         >
-          <div>
-            <span>Name:</span>
-            <span
-              className="header-info"
-              style={{ marginLeft: "350px", fontWeight: "bold" }}
-            >
-              Registration Number:
-            </span>
-            <span
-              className="header-info"
-              style={{ marginLeft: "345px", fontWeight: "bold" }}
-            >
-              Semester:
-            </span>
-          </div>
+        <div style={{ textAlign: 'left' }}>
+      <span>Name: </span>
+      <input type='text'></input>
+    </div>
+    <div style={{ textAlign: 'center' }}>
+      <span className="header-info">Registration Number: </span>
+      <input type='number'></input>
+    </div>
+    <div style={{ textAlign: 'right' }}>
+      <span className="header-info">Year: </span>
+      <select>
+        <option>I</option>
+        <option>II</option>
+        <option>III</option>
+        <option>IV</option>
+      </select>
+    </div>
         </Card.Header>
         <Card.Body>
           {/* <Card.Title>Grade Sheet</Card.Title> */}

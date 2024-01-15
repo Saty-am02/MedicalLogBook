@@ -25,8 +25,9 @@
 
 .navbar {
   background-color: #b5b5b5;
-  overflow: hidden;
+  overflow:hidden;
   margin-top: 130px;
+  position:fixed;
 }
 
 .navbar ul {
@@ -53,9 +54,8 @@
 }
 
 .logo {
-  /* padding-right: 1600px; */
-  padding-left: 30px;
-  margin-top: 15px;
+  padding-left: 25px;
+  margin-top: 14px;
   position: absolute;
 }
 
@@ -72,6 +72,10 @@
   margin-left: 1500px;
   margin-top: 35px;
 }
+/* .supporticon{
+  margin-left: 1500px;
+  margin-top: 37px;
+} */
 
 .side-bar {
   position: fixed;
@@ -97,11 +101,11 @@
 
 .btnsupport {
   height: 40px;
-  width: 90px;
+  width: 120px;
   position: absolute;
   background-color: #05025c;
   border-radius: 20px;
-  left: 1790px;
+  left: 1770px;
   top: 20px;
   font-size: 16px;
   padding-left: 3px;
@@ -122,8 +126,7 @@
 
 .left-navbar li {
   padding: 10px;
-  display: flex;
-  /* Align items horizontally */
+  display: flex; /* Align items horizontally */
 }
 
 .left-navbar a {
@@ -131,8 +134,7 @@
   color: white;
   /* font-size: 23px; */
   justify-content: left;
-  display: flex;
-  /* Align items horizontally */
+  display: flex; /* Align items horizontally */
 }
 
 .sidebarcont {
@@ -146,8 +148,7 @@
 
 .sidelink {
   display: flex;
-  align-items: center;
-  /* Center content vertically */
+  align-items: center; /* Center content vertically */
   text-decoration: none;
   color: white;
   font-size: 18px;
@@ -160,12 +161,9 @@
 .courseicon,
 .timetableicon {
   margin-right: 8px;
-  width: 24px;
-  /* Adjust as needed */
-  height: 24px;
-  /* Adjust as needed */
+  width: 24px; 
+  height: 24px; 
 }
-
 .admin-navbar {
   position: fixed;
   top: 199px;
@@ -174,108 +172,160 @@
   height: 750px;
   background-color: #05025c;
 }
-
 .nested-sidebaritem {
   margin-top: 20px;
-
-}
-
-.border-container {
-  position: absolute;
-  overflow: hidden;
-  border: 1px solid black;
-  margin-top: 260px;
-  width: 1500px;
-  height: 600px;
-
 }
 
 .btnaddeditstudent {
-  position: absolute;
+  position:fixed;
   background-color: rgb(47, 183, 228);
   border-radius: 3px;
   width: 180px;
   height: 40px;
-  right: 1010px;
-  top: 210px;
+  right: 1320px;
+  top: 220px;
   padding-left: 3px;
   padding-top: 6px;
   color: white;
   font-size: 20px;
 }
-
 .btnparentdetail {
-  position: absolute;
+  position:fixed;
   background-color: rgb(47, 183, 228);
   border-radius: 3px;
   width: 180px;
   height: 40px;
-  right: 800px;
-  top: 210px;
+  right: 1100px;
+  top: 220px;
   padding-left: 3px;
   padding-top: 6px;
   color: white;
   font-size: 20px;
 }
 
+.btnaddeditstudent.active {
+  background-color: rgb(255, 255, 255);
+  color: rgb(47, 183, 228);
+}
+
+.btnparentdetail.active {
+  background-color: rgb(255, 255, 255);
+  color: rgb(47, 183, 228);
+}
 
 
-/* @media only screen and (max-width: 768px) {
-  .top-bar {
-    height: 20px;
-  }
+.btninternalmarks {
+  position: absolute;
+  background-color: rgb(47, 183, 228);
+  border-radius: 3px;
+  width: 180px;
+  height: 40px;
+  right: 930px;
+  top: -55px;
+  padding-left: 3px;
+  padding-top: 6px;
+  color: white;
+  font-size: 20px;
+}
 
-  .mid-bar {
-    top: 20px;
-    height: 80px;
-  }
+.studentcard {
+  width: 93rem;
+  position: fixed;
+  margin-top: 280px;
+  margin-left:80px ;
+  height: 50rem;
+}
 
-  .navbar {
-    margin-top: 100px;
-  }
 
-  .logo {
-    padding-right: 20px;
-  }
+.parentcard{
+  width: 93rem;
+  position: fixed;
+  margin-top: 280px;
+  margin-left:80px ;
+  height: 50rem;
+}
+.parentcard1 {
+  margin-left: 6px;
+  position: fixed;
+  margin-top: 20px;
+  width: 43rem;
+}
 
-  .notifyicon2 {
-    margin-left: 20px;
-  }
 
-  .side-bar {
-    top: 119px;
-    height: auto;
-    width: 100%;
-  }
+.parentform {
+  margin-top: 30px;
+  margin-right: 0px;
+  position: static;
+  text-align: left;
+  height: 920px;
+  font-size: 20px;
+}
+.btnparentsave {
+  position: absolute;
+  background-color: rgb(47, 183, 228);
+  border-radius: 3px;
+  width: 100px;
+  height: 40px;
+  right: 450px;
+  bottom: 500px;
+  padding-left: 3px;
+  padding-top: 6px;
+  color: white;
+  font-size: 22px;
+}
+.btnparentedit {
+  position: absolute;
+  background-color: rgb(47, 183, 228);
+  border-radius: 3px;
+  width: 100px;
+  height: 40px;
+  right: 250px;
+  bottom: 500px;
+  padding-left: 3px;
+  padding-top: 6px;
+  color: white;
+  font-size: 22px;
+}
 
-  .btnlogout {
-    left: 10px;
-    top: 30px;
-  }
+.studentform {
+  margin-top: 30px;
+  margin-right: 0px;
+  position: static;
+  text-align: left;
+  height: 1060px;
+  font-size: 20px;
+}
 
-  .btnsupport {
-    left: 20px;
-    top: 20px;
-  }
+.studentcard1 {
+  margin-left: 6px;
+  position: fixed;
+  margin-top: 20px;
+  width: 43rem;
+}
+.btnstudentsave {
+  position: absolute;
+  background-color: rgb(47, 183, 228);
+  border-radius: 3px;
+  width: 100px;
+  height: 40px;
+  right: 450px;
+  bottom: 200px;
+  padding-left: 3px;
+  padding-top: 6px;
+  color: white;
+  font-size: 22px;
+}
+.btnstudentedit {
+  position: absolute;
+  background-color: rgb(47, 183, 228);
+  border-radius: 3px;
+  width: 100px;
+  height: 40px;
+  right: 250px;
+  bottom: 200px;
+  padding-left: 3px;
+  padding-top: 6px;
+  color: white;
+  font-size: 22px;
+}
 
-  .left-navbar {
-    width: 100%;
-    padding-top: 30px;
-  }
-
-  .nested-sidebaritem {
-    margin-top: 10px;
-  }
-
-  .border-container {
-    margin-top: 150px;
-    width: 100%;
-    height: auto;
-  }
-
-  .btnaddeditstudent,
-  .btnparentdetail {
-    width: 100%;
-    right: 0;
-  }
-} */

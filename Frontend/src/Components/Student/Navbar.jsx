@@ -2,6 +2,7 @@ import React from "react";
 import "../Style/style.css";
 import logo from "../Assets/icons/logo.png";
 import notification2 from '../Assets/icons/notification2.png'
+import supporticon from '../Assets/icons/Support.png'
 const Navbar = () => {
   return (
     <div className="container">
@@ -60,7 +61,7 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="btnsupport" type="Button">
-            Support
+          <img className="supporticon" src={supporticon}></img>  Support
           </div>
         </div>
       </nav>
