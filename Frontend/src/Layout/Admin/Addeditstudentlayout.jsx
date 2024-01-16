@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import "../../Components/Style/style.css";
+// import "../../Components/Style/style.css";
 import Card from "react-bootstrap/Card";
 import Adminsidebar from "../../Components/Admin/Adminsidebar";
 import Adminnavbar from "../../Components/Admin/Adminnavbar";
@@ -102,26 +102,28 @@ const Addeditstudentlayout = () => {
     <div className='container'>
        <Adminsidebar />
       <Adminnavbar />
-
+      <div >
       <Button
-        className={`btnaddeditstudent ${activeButton === 'Add/Edit Student' ? 'active' : ''}`}
+        className={`btn-blue w-60 h-10 ${activeButton === 'Add/Edit Student' ? 'active' : ''}`}
         onClick={handleAddEditStudentClick}
       >Add/Edit Student</Button>
       <Button
         className={`btnparentdetail ${activeButton === 'Parent Details' ? 'active' : ''}`}
         onClick={handleParentDetailsClick}
       >Parent Details</Button>
+      </div>
+      
 
       {showStudentCard && (
-       <Card className='studentcard'>
+       <Card className='w-93rem fixed mt-280 ml-80 h-50rem overflow-y-auto max-h-80vh'>
        <Row xs={1} md={2} className="g-4">
          {cardDatastudent.map((card, idx) => (
            <Col key={idx} xs={card.size} md={card.size}>
-             <Card className='studentcard1'border='light'>
+             <Card className='ml-6 fixed mt-20 w-43rem'border='light'>
               
                <Card.Body>
                  <Card.Title>{card.title}</Card.Title>
-                 <Form className='studentform'>
+                 <Form className='mt-30 mr-0 static text-left h-1060 text-20'>
                    <Form.Group as={Row} className="mb-3">
                      <Form.Label column sm="4">
                        {card.label}
@@ -164,21 +166,21 @@ const Addeditstudentlayout = () => {
            </Col>
          ))}
        </Row>
-       <Button className="btnstudentsave">Save</Button>
-         <Button className="btnstudentedit">Edit</Button>
+       <Button className="absolute bg-blue-500 rounded-md w-100 h-40 right-450 bottom-neg-300 text-white text-22 pl-3 pt-6">Save</Button>
+         <Button className="absolute bg-blue-500 rounded-md w-100 h-40 right-250 bottom-neg-300 text-white text-22 pl-3 pt-6">Edit</Button>
        </Card>
       )}
 
       {showParentCard && (
-         <Card className="parentcard">
+         <Card className="w-93rem fixed mt-280 ml-80 h-50rem overflow-y-auto max-h-80vh">
          <Row xs={1} md={2} className="g-4">
            {cardDataparent.map((card, idx) => (
              <Col key={idx} xs={card.size} md={card.size}>
-               <Card className="parentcard1" border="light">
+               <Card className="ml-6 fixed mt-20 w-43rem" border="light">
                  {/* <Card.Img variant="top" src={card.image} alt={`Card ${idx + 1}`} /> */}
                  <Card.Body>
                    <Card.Title>{card.title}</Card.Title>
-                   <Form className="parentform">
+                   <Form className="mt-30 mr-0 static text-left h-920 text-20">
                      <Form.Group as={Row} className="mb-3">
                        <Form.Label column sm="4">
                          {card.label}
@@ -230,8 +232,8 @@ const Addeditstudentlayout = () => {
              </Col>
            ))}
          </Row>
-         <Button className="btnparentsave">Save</Button>
-         <Button className="btnparentedit">Edit</Button>
+         <Button className="absolute bg-blue-500 rounded-md w-100 h-40 right-450 bottom-100 text-white text-22 pl-3 pt-6">Save</Button>
+         <Button className="absolute bg-blue-500 rounded-md w-100 h-40 right-250 bottom-100 text-white text-22 pl-3 pt-6">Edit</Button>
        </Card>
       )}
     </div>

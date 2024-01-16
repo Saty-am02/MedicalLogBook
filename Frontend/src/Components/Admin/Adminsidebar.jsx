@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../Style/style.css";
 import Button from "react-bootstrap/Button";
-import "../../Components/Style/samp.css";
+ import "../../Components/Style/samp.css";
 
 const AddFaculty = () => {
   return <div>Faculty</div>;

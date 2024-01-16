@@ -6,8 +6,8 @@ import supporticon from '../Assets/icons/Support.png'
 const Adminnavbar = () => {
   return (
     <div className="container">
-    <div className="top-bar"></div>
-    <div className="mid-bar">
+    <div className="top-bar w-full top-0"></div>
+    <div className="mid-bar w-full top-30">
       <div className="logo">
         <img className="logoicon" src={logo}></img>
       </div>
