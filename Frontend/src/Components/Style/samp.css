@@ -1,0 +1,30 @@
+button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    width: 300px;
+    margin-left: 20px;
+    color: white;
+    background-color: #130ea1;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .sub-options {     
+    display: flex;                 /*this is property for admin side bar sub options*/
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+ 
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+ 
+  
+  
+  

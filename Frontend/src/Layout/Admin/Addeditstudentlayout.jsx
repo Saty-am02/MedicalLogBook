@@ -29,38 +29,37 @@ const Addeditstudentlayout = () => {
   const cardDatastudent = [
     {
       title: 'Student Details',
-      label: "Father's Name:",
+      label: "Name as per 12th gradesheet:",type:'text',
       additionalFields: [
-        { label: "Name as per 12th gradesheet:"  },
-        { label: "Enrollment number:"  },
-        { label: " Application number:" },
-        { label: " Academic year:" },
-        { label: " Program/Branch:" },
-        { label: "Date of joining:" },
-        { label: " Date of birth:" },
-        { label: " Gender:" },
-        { label: " Present mobile number:" },
-        { label: " Previous mobile number:" },
-        { label: " Email id:" },
-        { label: " Blood group:" },
-        { label: " Category of admission:" },
-        { label: " Nationality:" },
-        { label: "Religion:" },
+        { label: "Enrollment number:",type:'number'  },
+        { label: " Application number:",type:'number' },
+        { label: " Academic year:",type:'number' },
+        { label: " Program/Branch:",type:'text' },
+        { label: "Date of joining:",type:'date' },
+        { label: " Date of birth:",type:'date' },
+        { label: " Gender:",type:'text' },
+        { label: " Present mobile number:",type:'number' },
+        { label: " Previous mobile number:",type:'number' },
+        { label: " Email id:",type:'mail' },
+        { label: " Blood group:",type:'text' },
+        { label: " Category of admission:",type:'text' },
+        { label: " Nationality:",type:'text'},
+        { label: "Religion:",type:'text' },
         
       ],
     },
     { title: '', label: ' Social category:', size:6,
     additionalFields: [
-        { label: "Mother tongue:" },
-        { label: "Maritial status:" },
-      { label: 'Domicile status:' },
-      { label: 'Adhar card:' },
-      { label: 'Name as on Adhar card:' },
-      { label: 'Official correspondance email:' },
-      { label: "Official correspondance number:" },
-      { label: "Emergency contact number:" },
-      { label: "Social media account:" },
-      { label: "Number of credits earned:" },
+        { label: "Mother tongue:",type:'text' },
+        { label: "Maritial status:",type:'text' },
+      { label: 'Domicile status:',type:'text' },
+      { label: 'Adhar card:',type:'number' },
+      { label: 'Name as on Adhar card:',type:'text' },
+      { label: 'Official correspondance email:',type:'mail' },
+      { label: "Official correspondance number:",type:'number' },
+      { label: "Emergency contact number:",type:'number' },
+      { label: "Social media account:",type:'text' },
+      { label: "Number of credits earned:",type:'number' },
     ],
   
   },
@@ -68,20 +67,20 @@ const Addeditstudentlayout = () => {
   const cardDataparent = [
     {
       title: "Parent Details",
-      label: "Father's Name:",
+      label: "Father's Name:",type:'text',
       additionalFields: [
-        { label: "Father's contact number:" },
-        { label: "Father's occupation:" },
-        { label: " Father's email id:" },
-        { label: " Mother's Name:" },
-        { label: " Mother's contact number:" },
-        { label: "Mother's occupation:" },
-        { label: " Mother's email id:" },
-        { label: " Guardian Name:" },
-        { label: " Guardian contact number:" },
-        { label: " Guardian occupation:" },
-        { label: " Guardian email id:" },
-        { label: " Category of admission:" },
+        { label: "Father's contact number:",type:'number' },
+        { label: "Father's occupation:",type:'text'},
+        { label: " Father's email id:",type:'mail'},
+        { label: " Mother's Name:",type:'text' },
+        { label: " Mother's contact number:",type:'number' },
+        { label: "Mother's occupation:",type:'text' },
+        { label: " Mother's email id:",type:'mail' },
+        { label: " Guardian Name:",type:'text' },
+        { label: " Guardian contact number:",type:'number' },
+        { label: " Guardian occupation:",type:'text' },
+        { label: " Guardian email id:" ,type:'mail'},
+        { label: " Category of admission:" ,type:'text'},
       ],
     },
     {
@@ -89,11 +88,11 @@ const Addeditstudentlayout = () => {
       label: " Maritial status:",
       size: 6,
       additionalFields: [
-        { label: " Bank Account number:" },
-        { label: " Account holder name:" },
-        { label: " IFSC code:" },
-        { label: " Branch:" },
-        { label: " PAN card number:" },
+        { label: " Bank Account number:",type:'number' },
+        { label: " Account holder name:",type:'text' },
+        { label: " IFSC code:",type:'text' },
+        { label: " Branch:" ,type:'text'},
+        { label: " PAN card number:",type:'text' },
       ],
     },
   ];
@@ -128,7 +127,7 @@ const Addeditstudentlayout = () => {
                        {card.label}
                      </Form.Label>
                      <Col sm="8">
-                       <Form.Control type="text" placeholder={card.placeholder} />
+                       <Form.Control type={card.type} placeholder={card.placeholder} />
                      </Col>
                    </Form.Group>
                    {idx === 0 && (
@@ -139,7 +138,7 @@ const Addeditstudentlayout = () => {
                              {field.label}
                            </Form.Label>
                            <Col sm="8">
-                             <Form.Control type="text" placeholder={field.placeholder} />
+                             <Form.Control type={field.type} placeholder={field.placeholder} />
                            </Col>
                          </Form.Group>
                        ))}
@@ -153,7 +152,7 @@ const Addeditstudentlayout = () => {
                              {field.label}
                            </Form.Label>
                            <Col sm="8">
-                             <Form.Control type="text" placeholder={field.placeholder} />
+                             <Form.Control type={field.type} placeholder={field.placeholder} />
                            </Col>
                          </Form.Group>
                        ))}
@@ -186,7 +185,7 @@ const Addeditstudentlayout = () => {
                        </Form.Label>
                        <Col sm="8">
                          <Form.Control
-                           type="text"
+                           type={card.type}
                            placeholder={card.placeholder}
                          />
                        </Col>
@@ -200,7 +199,7 @@ const Addeditstudentlayout = () => {
                              </Form.Label>
                              <Col sm="8">
                                <Form.Control
-                                 type="text"
+                                 type={field.type}
                                  placeholder={field.placeholder}
                                />
                              </Col>
@@ -217,7 +216,7 @@ const Addeditstudentlayout = () => {
                              </Form.Label>
                              <Col sm="8">
                                <Form.Control
-                                 type="text"
+                                 type={field.type}
                                  placeholder={field.placeholder}
                                />
                              </Col>

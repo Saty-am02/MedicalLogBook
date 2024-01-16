@@ -50,9 +50,9 @@ const Adminnavbar = () => {
             </a>
           </li>
         </ul>
-        <div className="btnsupport" type="Button">
+        {/* <div className="btnsupport" type="Button">
         <img className="supporticon" src={supporticon}></img> Support
-        </div>
+        </div> */}
       </div>
     </nav>
   </div>

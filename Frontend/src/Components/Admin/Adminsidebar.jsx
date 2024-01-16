@@ -1,100 +1,78 @@
 import React, { useState } from "react";
-import '../Style/style.css'
+import "../Style/style.css";
 import Button from "react-bootstrap/Button";
+import "../../Components/Style/samp.css";
 
-function Adminsidebar() {
-    const [isStudentCollapsed, setIsStudentCollapsed] = useState(true);
-  const [isFacultyCollapsed, setIsFacultyCollapsed] = useState(true);
+const AddFaculty = () => {
+  return <div>Faculty</div>;
+};
 
-  const handleToggleStudentCollapse = () => {
-    setIsStudentCollapsed(!isStudentCollapsed);
-    setIsFacultyCollapsed(true)
-    
+const AddStudent = () => {
+  return <div>Student</div>;
+};
+
+const Adminsidebar = () => {
+  const [showFacultyOptions, setShowFacultyOptions] = useState(false);
+  const [showStudentOptions, setShowStudentOptions] = useState(false);
+
+  const toggleFacultyOptions = () => {
+    setShowFacultyOptions(!showFacultyOptions);
+    setShowStudentOptions(false);
   };
-  const handleToggleFacultyCollapse = () => {
-    setIsFacultyCollapsed(!isFacultyCollapsed);
-    setIsStudentCollapsed(true); // Close the student collapsible
-  };
 
+  const toggleStudentOptions = () => {
+    setShowStudentOptions(!showStudentOptions);
+    setShowFacultyOptions(false);
+  };
 
   return (
     <div className="container">
       <div className="side-bar">
         <nav className="left-navbar">
-          <ul className="sidebarcont">
-            <li className="sidebaritem">
-              <a className="sidelink" href="#">
-                Add Student
-                <Button
-                  onClick={handleToggleStudentCollapse}
-                  aria-controls="gradeSheetTable"
-                  aria-expanded={isStudentCollapsed}
-                  variant="link"
-                >
-                  {isStudentCollapsed ? "+" : "-"}
-                </Button>
-              </a>
-              <div
-                id="minimize"
-                className={`collapse${isStudentCollapsed ? "" : " show"}`}
+          <button className="sidelink" onClick={toggleFacultyOptions}>
+            Student
+          </button>
+          {showFacultyOptions && (
+            <div>
+              <button
+                className="sidebaritem"
+                onClick={() => console.log("Add / Edit Student clicked")}
               >
-                {/* Additional items to be displayed when "Add Student" is clicked */}
-                <ul className="nested-sidebarcont">
-                  <li className="nested-sidebaritem">
-                    <a className="nested-sidelink" href="#">
-                      {" "}
-                      Add / Edit Student
-                    </a>
-                  </li>
-                  <li className="nested-sidebaritem">
-                    <a className="nested-sidelink" href="#">
-                      {" "}
-                      Search Student
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-
-
-            <li className="sidebaritem">
-              <a className="sidelink" href="#">
-                Add Faculty
-                <Button
-                  onClick={handleToggleFacultyCollapse}
-                  aria-controls="gradeSheetTable"
-                  aria-expanded={isFacultyCollapsed}
-                  variant="link"
-                >
-                  {isFacultyCollapsed ? "+" : "-"}
-                </Button>
-              </a>
-              <div
-                id="minimize"
-                className={`collapse${isFacultyCollapsed ? "" : " show"}`}
+                Add / Edit Student
+              </button>
+              <button
+                className="sidebaritem"
+                onClick={() => console.log("Search Student clicked")}
               >
-                {/* Additional items to be displayed when "Add Student" is clicked */}
-                <ul className="nested-sidebarcont">
-                  <li className="nested-sidebaritem">
-                    <a className="nested-sidelink" href="#">
-                      {" "}
-                      Add / Edit Faculty
-                    </a>
-                  </li>
-                  <li className="nested-sidebaritem">
-                    <a className="nested-sidelink" href="#">
-                      {" "}
-                      Search Faculty
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
+                Search Student
+              </button>
+            </div>
+          )}
+
+          <button className="sidelink" onClick={toggleStudentOptions}>
+            Faculty
+          </button>
+          {showStudentOptions && (
+            <div >
+              <button 
+              className="sidebaritem"
+              onClick={() => console.log("Add / Edit Faculty clicked")}>
+                Add / Edit Faculty
+              </button>
+              <button
+              className="sidebaritem"
+              onClick={() => console.log("Search Faculty clicked")}>
+                Search Faculty
+              </button>
+            </div>
+          )}
+
+          {showFacultyOptions && <AddFaculty />}
+          {showStudentOptions && <AddStudent />}
         </nav>
       </div>
     </div>
   );
-}
+};
 
 export default Adminsidebar;

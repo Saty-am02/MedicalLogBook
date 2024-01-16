@@ -132,26 +132,26 @@
 .left-navbar a {
   text-decoration: none;
   color: white;
-  /* font-size: 23px; */
   justify-content: left;
-  display: flex; /* Align items horizontally */
+  display: flex; 
 }
 
 .sidebarcont {
   padding: 10px;
 }
 
-/* Additional styling for sidebar items */
+
 .sidebaritem {
   margin-bottom: 10px;
 }
 
 .sidelink {
   display: flex;
-  align-items: center; /* Center content vertically */
+  /* align-items: center;  */
   text-decoration: none;
   color: white;
-  font-size: 18px;
+  font-size: 20px;
+  text-align:justify;
 }
 
 .internalicon,
@@ -172,9 +172,10 @@
   height: 750px;
   background-color: #05025c;
 }
-.nested-sidebaritem {
-  margin-top: 20px;
-}
+
+/* .nested-sidebaritem {
+  margin-top: 3px;
+} */
 
 .btnaddeditstudent {
   position:fixed;
@@ -234,6 +235,8 @@
   margin-top: 280px;
   margin-left:80px ;
   height: 50rem;
+  overflow-y: auto;
+  max-height: 80vh;
 }
 
 
@@ -243,6 +246,8 @@
   margin-top: 280px;
   margin-left:80px ;
   height: 50rem;
+  overflow-y: auto;
+  max-height: 80vh;
 }
 .parentcard1 {
   margin-left: 6px;
@@ -267,7 +272,7 @@
   width: 100px;
   height: 40px;
   right: 450px;
-  bottom: 500px;
+  bottom: 100px;
   padding-left: 3px;
   padding-top: 6px;
   color: white;
@@ -280,7 +285,7 @@
   width: 100px;
   height: 40px;
   right: 250px;
-  bottom: 500px;
+  bottom: 100px;
   padding-left: 3px;
   padding-top: 6px;
   color: white;
@@ -309,7 +314,7 @@
   width: 100px;
   height: 40px;
   right: 450px;
-  bottom: 200px;
+  bottom: -300px;
   padding-left: 3px;
   padding-top: 6px;
   color: white;
@@ -322,7 +327,7 @@
   width: 100px;
   height: 40px;
   right: 250px;
-  bottom: 200px;
+  bottom: -300px;
   padding-left: 3px;
   padding-top: 6px;
   color: white;
