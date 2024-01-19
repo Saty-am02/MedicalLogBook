@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Style/style.css'
+//import '../Style/style.css'
 import logo from "../Assets/icons/logo.png";
 import notification2 from '../Assets/icons/notification2.png'
 import supporticon from '../Assets/icons/Support.png'
@@ -32,7 +32,7 @@ const Adminnavbar = () => {
       >
         <span className="navbar-toggler-icon"></span>
       </button>
-      <div className="collapse navbar-collapse" id="navbarNav">
+      <div className="" id="navbarNav">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item active">
             <a className="nav-link" href="#">

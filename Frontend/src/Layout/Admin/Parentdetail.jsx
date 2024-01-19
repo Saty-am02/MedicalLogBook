@@ -1,5 +1,5 @@
 import React from "react";
-import "../../Components/Style/style.css";
+// import "../../Components/Style/style.css";
 import Card from "react-bootstrap/Card";
 import Adminsidebar from "../../Components/Admin/Adminsidebar";
 import Adminnavbar from "../../Components/Admin/Adminnavbar";

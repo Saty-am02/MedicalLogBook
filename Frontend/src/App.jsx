@@ -1,6 +1,6 @@
 // App.js
 import './App.css'; 
-import './Components/Style/style.css'
+//import './Components/Style/style.css'
 import './Components/Style/loginstyle.css'
 //import Adminsidebar from './Components/Admin/Adminsidebar';
 //import Addeditstudent from './Layout/Admin/Addeditstudent';

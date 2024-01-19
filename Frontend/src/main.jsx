@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-import './Components/Style/style.css'
+//import './Components/Style/style.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import {createBrowserRouter,createRoutesFromElements,Route,RouterProvider} from 'react-router-dom'
@@ -15,6 +15,9 @@ import Login from './Layout/Login/Adminloginform.jsx'
 import Adminsidebar from './Components/Admin/Adminsidebar.jsx'
 import Adminnavbar from './Components/Admin/Adminnavbar.jsx'
 import Adminhomepage from './Layout/Admin/Adminhomepage.jsx'
+import Sidebar from './Components/Student/Sidebar.jsx';
+//import Search from './Layout/Admin/Searchstudent.jsx';
+import SearchStudent from './Layout/Admin/Searchstudent.jsx';
 
 
 const router = createBrowserRouter(
@@ -28,6 +31,8 @@ const router = createBrowserRouter(
       {/* <Route index={true} path="/Sample" element={<Sample/>}></Route>  */}
       <Route index={true} path="/Adminsidebar" element={<Adminsidebar/>}></Route>
       <Route index={true} path="/Adminhomepage" element={<Adminhomepage/>}></Route>
+      <Route index={true} path="/Sidebar" element={<Sidebar/>}></Route>
+      <Route index={true} path="/Searchstudent" element={<SearchStudent/>}></Route>
     </Route>
   )
 )

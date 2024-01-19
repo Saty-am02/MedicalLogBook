@@ -49,7 +49,7 @@ const Loginform = () => {
       // Check if the request was successful (status code 2xx)
       if (response.ok) {
         console.log('Login successful');
-        navigate('/addedit')
+        navigate('/Adminhomepage')
         // You can perform additional actions here, such as redirecting the user
       } else {
         // Handle errors from the backend

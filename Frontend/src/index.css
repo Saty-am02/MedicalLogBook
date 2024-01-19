@@ -82,8 +82,8 @@ body:has(.card[data-color="green"]:hover) {
     @apply flex absolute bg-blue-500 rounded-md right-40 top-32 pl-3 pt-6 text-white text-20;
   }
   
-  .text-20 {
-    width: 4.5rem; /* Adjust the width value as needed */
+  .text-5 {
+    font-size: 20px; /* Adjust the width value as needed */
   }
   .container{
     @apply m-0 p-0 relative;
@@ -94,7 +94,70 @@ body:has(.card[data-color="green"]:hover) {
   .mid-bar{
     @apply fixed  left-0  bg-indigo-800 text-white;
   }
-  .navbar{
+  .ml-100{
+    margin-left:400px ;
+  }
+  .ml-150{
+    margin-left: 600px;
+  }
+  .left-230{
+    left: 920px;
+  }
+  .top-300{
+    margin-top: 1200px;
+  }
+  .w-20{
+    width: 80px;
+  }
+  .right-65{
+    right: 260px;
+  }
+  .h-100{
+    height: 400px;
+  }
+  .w-100{
+    width: 400px;
+  }
+  .ml-10{
+    margin-left: 40px;
+  }
+  .ml-100{
+    margin-left: 400px;
+  }
+  .ml-35{
+    margin-left: 140px;
+  }
+  .z-index{
+    z-index: 10000;
+  }
+  .w-60{
+    width: 240px;
+  }
+  .top-14{
+    top: 60px;
+  }
+  .mt-30{
+    margin-top: 120px;
+  }
+  .w-60vw{
+    width: 60vw;
+  }
+  .m-20{
+    margin: 80px;
+  }
+  .example::-webkit-scrollbar {
+    display: none;
+  }
+  .w-70vw{
+    width: 70vw;
+  }
+  .top-200{
+    top: 800px;
+  }
+  .left-250{
+    left: 900px;
+  }
+  /* .navbar{
     @apply bg-gray-300 overflow-hidden mt-35 fixed;
   }
   .navbar ul{
@@ -120,7 +183,7 @@ body:has(.card[data-color="green"]:hover) {
   }
   .side-bar{
     @apply fixed top-199 left-0  bg-indigo-800;
-  }
+  } */
 
 }
 
