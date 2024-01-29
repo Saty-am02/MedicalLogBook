@@ -1,8 +1,8 @@
 import React from 'react'
 //import '../Style/style.css'
 import logo from "../Assets/icons/logo.png";
-import notification2 from '../Assets/icons/notification2.png'
-import supporticon from '../Assets/icons/Support.png'
+import notification1 from '../Assets/icons/notification1.png'
+//import supporticon from '../Assets/icons/Support.png'
 const Adminnavbar = () => {
   return (
     <div className="container">
@@ -12,8 +12,8 @@ const Adminnavbar = () => {
         <img className="logoicon" src={logo}></img>
       </div>
       <div className="logotext">Medical Log</div>
-      <div className="notification">
-        <img className="notifyicon2" src={notification2}></img>
+      <div className="notification ml-425 mt-9">
+        <img className="notifyicon1" src={notification1}></img>
       </div>
       <div className="btnlogout" type="Button">
         Logout
@@ -50,9 +50,6 @@ const Adminnavbar = () => {
             </a>
           </li>
         </ul>
-        {/* <div className="btnsupport" type="Button">
-        <img className="supporticon" src={supporticon}></img> Support
-        </div> */}
       </div>
     </nav>
   </div>
